@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DarkTheme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEk-FI-EBR">
+                                <rect key="frame" x="20" y="94" width="374" height="718"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo Man!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXu-2P-7tl">
+                                        <rect key="frame" x="111.5" y="100" width="151" height="43"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="40"/>
+                                        <color key="textColor" name="PrimaryLabel"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a simple example of dark theme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxH-fq-MzN">
+                                        <rect key="frame" x="8" y="158" width="358" height="53.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                        <color key="textColor" name="SecondaryLabel"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-28-ayV">
+                                        <rect key="frame" x="8" y="311.5" width="358" height="91"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="91" id="Pec-sd-QXN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="25"/>
+                                        <state key="normal" title="Light Icon">
+                                            <color key="titleColor" name="PrimaryLabel"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwM-6q-udp">
+                                        <rect key="frame" x="8" y="427.5" width="358" height="91"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="91" id="Vw8-1n-2RH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="25"/>
+                                        <state key="normal" title="Dark Icon">
+                                            <color key="titleColor" name="PrimaryLabel"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="SecondaryBackground"/>
+                                <constraints>
+                                    <constraint firstItem="qXu-2P-7tl" firstAttribute="centerX" secondItem="YEk-FI-EBR" secondAttribute="centerX" id="0mJ-ZA-Rj2"/>
+                                    <constraint firstItem="2hr-28-ayV" firstAttribute="leading" secondItem="YEk-FI-EBR" secondAttribute="leading" constant="8" id="AeE-Bt-y8a"/>
+                                    <constraint firstAttribute="trailing" secondItem="MwM-6q-udp" secondAttribute="trailing" constant="8" id="DOl-aC-7nt"/>
+                                    <constraint firstItem="2hr-28-ayV" firstAttribute="top" secondItem="AxH-fq-MzN" secondAttribute="bottom" constant="100" id="N7z-Pk-hjT"/>
+                                    <constraint firstItem="AxH-fq-MzN" firstAttribute="top" secondItem="qXu-2P-7tl" secondAttribute="bottom" constant="15" id="RQz-nB-uPm"/>
+                                    <constraint firstAttribute="trailing" secondItem="AxH-fq-MzN" secondAttribute="trailing" constant="8" id="bOG-Ci-4gC"/>
+                                    <constraint firstItem="AxH-fq-MzN" firstAttribute="leading" secondItem="YEk-FI-EBR" secondAttribute="leading" constant="8" id="hrF-cf-PjF"/>
+                                    <constraint firstAttribute="trailing" secondItem="2hr-28-ayV" secondAttribute="trailing" constant="8" id="j1r-Fp-t6s"/>
+                                    <constraint firstItem="MwM-6q-udp" firstAttribute="leading" secondItem="YEk-FI-EBR" secondAttribute="leading" constant="8" id="kTr-hs-KLC"/>
+                                    <constraint firstItem="qXu-2P-7tl" firstAttribute="top" secondItem="YEk-FI-EBR" secondAttribute="top" constant="100" id="x2x-tl-hX7"/>
+                                    <constraint firstItem="MwM-6q-udp" firstAttribute="top" secondItem="2hr-28-ayV" secondAttribute="bottom" constant="25" id="zFF-6a-YqR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
+                        <constraints>
+                            <constraint firstItem="YEk-FI-EBR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Bfr-7R-pwU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YEk-FI-EBR" secondAttribute="trailing" constant="20" id="Vk3-XU-3iL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YEk-FI-EBR" secondAttribute="bottom" constant="50" id="eGA-rl-1SU"/>
+                            <constraint firstItem="YEk-FI-EBR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vqu-0Q-ZYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="SecondaryView" destination="YEk-FI-EBR" id="oHo-EO-5Xe"/>
+                        <outlet property="lightIconButton" destination="2hr-28-ayV" id="Y4Y-Rz-zka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="PrimaryBackground">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryLabel">
+            <color red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryLabel">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
